@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtSphere - Virtual Art Exhibitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://th.bing.com/th/id/R.e68efbd38a495a5b5a5c2772ad68b2c0?rik=L4Mu92LTLWW%2bUw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2f2%2f3%2f1428579-free-download-painting-art-wallpapers-3840x2160-for-pc.jpg&ehk=9W5pFoDtjd5oDY3I%2bIXnGYUyS8YpGPsj1FQcqyPPRY0%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            display: inline-block;
+        }
+
+        header img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #004d40;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 10px;
+            color: #00796b;
+        }
+
+        section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        a {
+            color: #00796b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .community-options {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleCommunityOptions() {
+            const options = document.getElementById('community-options');
+            if (options.style.display === 'none' || options.style.display === '') {
+                options.style.display = 'block';
+            } else {
+                options.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to ArtSphere</h1>
+        <img src="https://www.researchgate.net/profile/Diego-Peluffo-Ordonez/publication/320230211/figure/fig2/AS:709344874201088@1546132405969/3D-spherical-shield-and-Swiss-roll-data-sets.ppm" alt="ArtSphere Logo">
+        <nav>
+            <ul>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="exhibitions">
+        <h2>Virtual Exhibitions</h2>
+        <div>
+            <h3>Exhibition Title</h3>
+            <p>Explore our virtual gallery with 3D-rendered spaces showcasing various artworks. Use interactive features to navigate through the gallery and view high-resolution images of the artworks.</p>
+            <p><a href="virtual-tour.html">Start Virtual Tour</a></p>
+        </div>
+    </section>
+
+    <section id="artists">
+        <h2>Meet the Artists</h2>
+        <div>
+            <h3>Artist Showcase</h3>
+            <p>Learn more about our featured artists, their inspirations, and their work. Click below to explore their profiles and latest pieces.</p>
+            <p><a href="artists.html">View Artist Profiles</a></p>
+        </div>
+    </section>
+
+    <section id="community">
+        <h2>Art Community</h2>
+        <div>
+            <h3>Join the Discussion</h3>
+            <p>Connect with other art enthusiasts. Share your thoughts on various art forms, exhibitions, and more.</p>
+            <p><a href="#" onclick="toggleCommunityOptions(); return false;">Join Community</a></p>
+            <div id="community-options" class="community-options">
+                <h4>Community Options</h4>
+                <ul>
+                    <li><a href="forum.html" target="_blank">Join Forum</a></li> <!-- Link to forum.html -->
+                    <li><a href="events.html" target="_blank">Participate in Events</a></li>
+                    <li><a href="social-media.html" target="_blank">Follow Us on Social Media</a></li>
+                    <li><a href="newsletter.html" target="_blank">Subscribe to Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Art Education</h2>
+        <div>
+            <h3>Learn About Art</h3>
+            <p>Access educational resources about different art styles, techniques, and histories. Participate in virtual workshops and tutorials conducted by experienced artists and art historians.</p>
+            <p><a href="educational-resources.html" target="_blank">Explore Educational Resources</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArtSphere. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

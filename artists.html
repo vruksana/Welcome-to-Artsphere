@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtSphere - Featured Artists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        
+        header {
+            background-color: #4a4a4a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .container {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+        
+        .artist-profile {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .artist-profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        
+        .artist-details {
+            flex: 1;
+        }
+        
+        .artist-details h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .artist-details p {
+            margin: 5px 0;
+        }
+        
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        
+        .back-button:hover {
+            background-color: #3b7cc4;
+        }
+        
+        footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Featured Artists</h1>
+    </header>
+
+    <div class="container">
+        <button class="back-button" onclick="goBack()">Return to Previous Page</button>
+        
+        <div class="artist-profile">
+            <img src="https://www.macfound.org/media/photos/rivera_2021_hi-res-download_1.jpg" alt="Alex Rivera">
+            <div class="artist-details">
+                <h3>Alex Rivera</h3>
+                <p><strong>Style:</strong> Abstract Expressionism</p>
+                <p>Alex Rivera is known for their vivid use of color and bold abstract forms. Their work explores the relationship between emotion and form, inviting viewers into a world of vibrant complexity.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKYln9fYNtHoDXISum-_TWzAH2HZMc7MVprA&s" alt="Mia Chen">
+            <div class="artist-details">
+                <h3>Mia Chen</h3>
+                <p><strong>Style:</strong> Surrealism</p>
+                <p>Mia Chen's surrealist compositions blend reality and fantasy, creating dreamlike scenes that challenge our perception of the world.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="https://example.com/artist3.jpg" alt="Emma Hughes">
+            <div class="artist-details">
+                <h3>Emma Hughes</h3>
+                <p><strong>Style:</strong> Contemporary Minimalism</p>
+                <p>Emma Hughes creates stunning minimalist pieces that emphasize form, space, and balance. Her works are known for their simplicity and elegance, often using monochromatic color schemes to focus on the essence of shapes.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="https://example.com/artist4.jpg" alt="Samuel O'Connor">
+            <div class="artist-details">
+                <h3>Samuel O'Connor</h3>
+                <p><strong>Style:</strong> Neo-Impressionism</p>
+                <p>Samuel O'Connor is renowned for his intricate use of pointillism, creating vibrant landscapes that evoke a sense of peace and nostalgia. His work is heavily inspired by the beauty of nature and the delicate interplay of light and shadow.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="https://example.com/artist5.jpg" alt="Isabella Rossi">
+            <div class="artist-details">
+                <h3>Isabella Rossi</h3>
+                <p><strong>Style:</strong> Cubism</p>
+                <p>Isabella Rossi's cubist works deconstruct everyday objects and figures into geometric shapes, creating bold and thought-provoking compositions. Her work challenges viewers to see the world from a different perspective.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="https://example.com/artist6.jpg" alt="David Lee">
+            <div class="artist-details">
+                <h3>David Lee</h3>
+                <p><strong>Style:</strong> Postmodernism</p>
+                <p>David Lee's postmodern works break traditional boundaries by blending various art forms and media. His installations often explore themes of identity, culture, and technology.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ArtSphere. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

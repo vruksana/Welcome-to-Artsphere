@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour - ArtSphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4a4a4a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+            color: #4a90e2;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .interactive-info {
+            background-color: #eaf1f8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .interactive-info p {
+            margin: 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .return-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .return-btn:hover {
+            background-color: #3a78c2;
+        }
+
+        footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Virtual Tour</h1>
+    </header>
+
+    <section>
+        <h2>Explore the Gallery</h2>
+        <div class="interactive-info">
+            <p>Explore our virtual gallery with 3D-rendered spaces showcasing various artworks. Use interactive features to navigate through the gallery and view high-resolution images of the artworks in stunning detail. Navigate using your mouse or touch gestures to move through the space, and click on any artwork to view it in full resolution.</p>
+        </div>
+
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnH3PDEMml2Qm0FKssBnMnb0xX03PZtyriFg&s" alt="Artwork 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRchHcg3a-COIodSmK-hRtcjHSpsHMSNW7Fp2e0Baah8p5PsBubSTx5G7pL6fTPfIaRv0A&usqp=CAU" alt="Artwork 2">
+            <img src="https://images.saatchiart.com/saatchi/671216/art/4950659/4020483-HSC00001-7.jpg" alt="Artwork 3">
+            <img src="https://images.saatchiart.com/saatchi/671216/art/6477071/5546751-HSC00001-32.jpg" alt="Artwork 4">
+            <img src="https://images.saatchiart.com/saatchi/801248/art/7612031/6680603-HSC00001-7.jpg" alt="Artwork 5">
+            <img src="https://media.artsper.com/artwork/1246386_1_m.jpg" alt="Artwork 6">
+        </div>
+
+        
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArtSphere. All rights reserved.</p>
+    </footer>
+
+    <!-- Placeholder for 3D-rendered space script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // JavaScript code for integrating 3D gallery and interactivity
+        // Initialize 3D scene, camera, and renderer
+        // Use Three.js to load 3D models of the gallery and artworks
+        // Enable navigation with mouse and touch gestures
+
+        // Function for the Return button
+        function goBack() {
+            if (document.referrer) {
+                window.location.href = document.referrer; // Return to the referring page
+            } else {
+                window.location.href = "virtual-exhibitions.html"; // Fallback URL if no referrer
+            }
+        }
+    </script>
+
+</body>
+
+</html>
